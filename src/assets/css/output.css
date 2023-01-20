@@ -1,0 +1,215 @@
+* {
+  font-family: sans-serif, Arial, Helvetica;
+  margin: 0;
+  padding: 0;
+  color: #fdfdfd;
+  overflow-x: hidden;
+}
+
+body {
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(0, 0, 0) 30%, rgb(161, 2, 34) 100%);
+}
+
+.bar {
+  width: 50px;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.bar .bar-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bar .bar-text {
+  width: 200px;
+  height: 30px;
+  font-size: 1.3rem;
+  letter-spacing: 6px;
+  transform: rotate(90deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bar .bar-icons-container {
+  width: 50px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bar .bar-icons-container img {
+  width: 30px;
+  margin: 10px 0 20px 0;
+  filter: invert(1);
+}
+
+.initialSection-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.name-container {
+  font-size: 1.6rem;
+  display: flex;
+}
+.name-container .name-front {
+  position: absolute;
+  top: 120px;
+  transform: translateX(50px);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  animation: text-front 2s 1 normal;
+  z-index: 200;
+}
+.name-container .name-back {
+  position: absolute;
+  top: 180px;
+  transform: translateX(50px);
+  animation: text-back 2s 1 normal, blur 10s 1 normal;
+  opacity: 0;
+  z-index: 0;
+}
+.name-container .lastname-front {
+  z-index: 200;
+  position: absolute;
+  top: 180px;
+  transform: translateX(50px);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  animation: blur 10s 1 normal;
+  animation-delay: -5s;
+}
+.name-container .lastname-back {
+  z-index: 0;
+  position: absolute;
+  top: 180px;
+  transform: translateX(50px);
+  animation: blur 10s 1 normal;
+  animation-delay: -5s;
+}
+.name-container .cube {
+  z-index: 100;
+  width: 150px;
+  height: 150px;
+  background-color: transparent;
+  border: 1px solid #fdfdfd;
+  margin-top: 100px;
+  background: linear-gradient(270deg, rgb(2, 0, 36) 0%, rgb(0, 0, 0) 30%, rgb(81, 1, 24) 100%);
+  margin-left: 120px;
+}
+
+.description {
+  margin-top: 90px;
+  font-size: 1.3rem;
+  width: 225px;
+  text-align: center;
+}
+.description .description-one {
+  width: 13ch;
+  white-space: nowrap;
+  border-right: 1px solid transparent;
+  animation: typing 2s steps(16) normal, blick 2s step-end normal;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.description .description-two {
+  width: 9ch;
+  white-space: nowrap;
+  border-right: 1px solid transparent;
+  animation: typingTwo 3s steps(9) normal, blickTwo 3s step-end normal;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.arrowDown {
+  width: 50px;
+  height: 50px;
+  margin-top: 90px;
+  text-align: center;
+  animation: arrowDown 2s infinite normal, blur 10s 1 normal;
+  animation-delay: -5s;
+}
+.arrowDown img {
+  width: 30px;
+  filter: drop-shadow(0px 0px 4px #fdfdfd);
+}
+
+@keyframes text-front {
+  0% {
+    transform: translate(50px, 30px);
+  }
+  30% {
+    transform: translate(50px, 30px);
+  }
+  50% {
+    transform: translate(50px, 34px);
+  }
+  85% {
+    transform: translate(50px, -5px);
+  }
+}
+@keyframes text-back {
+  0% {
+    transform: translate(50px, -29px);
+  }
+  30% {
+    transform: translate(50px, -29px);
+  }
+  50% {
+    transform: translate(50px, -34px);
+  }
+  85% {
+    transform: translate(50px, 4px);
+  }
+}
+@keyframes blur {
+  0%, 20% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+  40%, 80% {
+    filter: blur(13px);
+    opacity: 0;
+  }
+}
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+}
+@keyframes typingTwo {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+}
+@keyframes blick {
+  0% {
+    border-color: #fdfdfd;
+  }
+}
+@keyframes blickTwo {
+  40% {
+    border-color: #fdfdfd;
+  }
+}
+@keyframes arrowDown {
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+/*# sourceMappingURL=output.css.map */

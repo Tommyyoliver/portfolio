@@ -1,0 +1,252 @@
+@import "./abstracts/variables";
+
+
+.initialSection-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.name-container {
+    font-size: 1.6rem;
+    display: flex;
+
+    .name-front {
+        position: absolute;
+        top: 120px;
+        transform: translateX(50px);
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 2px;
+        animation: text-front 2s 1 normal;
+        z-index: 200;
+    }
+    .name-back {
+        position: absolute;
+        top: 180px;
+        transform: translateX(50px);
+        animation: text-back 2s 1 normal, blur 10s 1 normal;
+        opacity: 0;
+        z-index: 0;
+    }
+    .lastname-front {
+        z-index: 200;
+        position: absolute;
+        top: 180px;
+        transform: translateX(50px);
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 2px;
+        animation: blur 10s 1 normal;
+        animation-delay: -5s;
+    }
+    .lastname-back {
+        z-index: 0;
+        position: absolute;
+        top: 180px;
+        transform: translateX(50px);
+        animation: blur 10s 1 normal;
+        animation-delay: -5s;
+    }
+
+    .cube {
+        z-index: 100;
+        width: 150px;
+        height: 150px;
+        background-color: transparent;
+        border: 1px solid $primary-color;
+        margin-top: 100px;
+        background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 30%, rgba(81,1,24,1) 100%);
+        margin-left: 120px;
+    }
+}
+
+
+.description {
+    margin-top: 90px;
+    font-size: 1.3rem;
+    width: 225px;
+    text-align: center;
+
+    .description-one {
+        width: 13ch;
+        white-space: nowrap;
+        border-right: 1px solid transparent;
+        animation: typing 2s steps(16) normal, blick 2s step-end normal;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .description-two {
+        width: 9ch;
+        white-space: nowrap;
+        border-right: 1px solid transparent;
+        animation: typingTwo 3s steps(9) normal, blickTwo 3s step-end normal;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+}
+
+.arrowDown { 
+    width: 50px;
+    height: 50px;
+    margin-top: 90px;
+    text-align: center;
+    animation: arrowDown 2s infinite normal, blur 10s 1 normal;
+    animation-delay: -5s;
+    img {
+        width: 30px;
+        filter: drop-shadow(0px 0px 4px $primary-color);
+    }
+}
+
+@keyframes text-front {
+    0% {transform: translate(50px, 30px);}
+    30% {transform: translate(50px, 30px);}
+    50% {transform: translate(50px, 34px);}
+    85% {transform: translate(50px, -5px);}
+}
+@keyframes text-back {
+    0% {transform: translate(50px, -29px);}
+    30% {transform: translate(50px, -29px);}
+    50% {transform: translate(50px, -34px);}
+    85% {transform: translate(50px, 4px);}
+}
+@keyframes blur {
+    0%, 20% {
+        filter: blur(0px);
+        opacity: 1;
+    }
+    40%, 80% {
+        filter: blur(13px);
+        opacity: 0;
+    }
+}
+
+@keyframes typing {
+    0% {width: 0;}
+}
+@keyframes typingTwo {
+    0% {width: 0;}
+    50% {width: 0;}
+}
+@keyframes blick {
+    0% {border-color: $primary-color;}
+}
+@keyframes blickTwo {
+    40% {border-color: $primary-color;}
+}
+
+@keyframes arrowDown {
+    50% {transform: translateY(5px);}
+}
+
+
+// .initialSection-container {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     height: 100vh;
+//     width: 100vw;
+//     font-size: 2rem;
+// }
+
+// .name-container{
+//     width: 50%;
+//     display: flex;
+//     h1 {
+//         position: absolute;
+//         font-size: 6rem;
+//     }
+//     .name-front {
+//         -webkit-text-fill-color: transparent;
+//         -webkit-text-stroke-width: 3px;
+//         z-index: 200;
+//         transform: translate(185px, 30px);
+//         animation: text-front 2s 1 normal;
+//     }
+//     .name-back {
+//         z-index: 0;
+//         transform: translate(185px, 150px);
+//         opacity: 0;
+//     }
+//     .name-back, .lastname-front, .lastname-back {
+//         animation: text-back 2s 1 normal, blur-effect 10s 1 normal;
+//     }
+//     .lastname-front, .lastname-back {
+//         animation-delay: -5s;
+//         transform: translate(185px, 150px);
+//     }
+//     .lastname-back {
+//         z-index: 200;
+//         -webkit-text-fill-color: transparent;
+//         -webkit-text-stroke-width: 3px;
+//     }
+//     .cube {
+//         z-index: 100;
+//         width: 300px;
+//         height: 300px;
+//         background-color: transparent;
+//         border: 1px solid $primary-color;
+//         margin-left: auto;
+//         background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 30%, rgba(81,1,24,1) 100%);
+//         box-shadow: 10px 0px 14px 3px $primary-color;
+//     }
+// }
+// @keyframes text-front {
+//     0% {transform: translate(185px, 80px);}
+//     20% {transform: translate(185px, 80px);}
+//     40% {transform: translate(185px, 90px);}
+//     70% {transform: translate(185px, 20px);}
+// }
+// @keyframes text-back {
+//     0% {transform: translate(185px, 80px);}
+//     20% {transform: translate(185px, 80px);}
+//     40% {transform: translate(185px, 70px);}
+//     70% {transform: translate(185px, 160px);}
+// }
+// @keyframes blur-effect {
+//     0%, 20% {
+//         filter: blur(0px);
+//         opacity: 1;
+//     }
+//     40%, 80% {
+//         filter: blur(13px);
+//         opacity: 0;
+//     }
+// }
+
+
+
+
+// .description{ 
+//     width: 50%;
+//     font-size: 2.5rem;
+//     .description-one {
+//         width: 13ch;
+//         overflow-x: hidden;
+//         margin-left: 50px;
+//         border-right: 3px solid transparent;
+//         animation: typing 2s steps(13) normal, blick 2s step-end normal;
+//     }
+//     .description-two {
+//         width: 9ch;
+//         overflow-x: hidden;
+//         white-space: nowrap;
+//         margin-left: 50px;
+//         border-right: 3px solid transparent;
+//         animation: typingTwo 2s steps(9) normal, blickTwo 2s step-end normal;
+//     }
+// }
+// @keyframes typing {
+//     0% {width: 0;}
+// }
+// @keyframes blick {
+//     0% {border-color: $primary-color;}
+// }
+// @keyframes typingTwo {
+//     0% {width: 0%;}
+//     50% {width: 0%;}
+// }
+// @keyframes blickTwo {
+//     50% {border-color: $primary-color;}
+// }
