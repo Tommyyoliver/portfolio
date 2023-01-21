@@ -11,45 +11,76 @@ body {
 }
 
 .bar {
-  width: 50px;
-  height: 100vh;
-  position: fixed;
+  width: 100vw;
+  height: 50px;
+  position: absolute;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  z-index: 100;
 }
-.bar .bar-icon {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.bar .bar-icon img {
+  width: 40px;
+  margin: 0 30px 0 10px;
 }
 .bar .bar-text {
-  width: 200px;
-  height: 30px;
-  font-size: 1.3rem;
-  letter-spacing: 6px;
-  transform: rotate(90deg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  letter-spacing: 4px;
+  font-size: 1rem;
 }
-.bar .bar-icons-container {
-  width: 50px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.bar .bar-icons-container a {
+  margin: 0 5px 0 5px;
 }
-.bar .bar-icons-container img {
-  width: 30px;
-  margin: 10px 0 20px 0;
+.bar .bar-icons-container a img {
+  width: 25px;
   filter: invert(1);
 }
 
+@media (min-width: 769px) {
+  .bar {
+    width: 50px;
+    height: 100vh;
+    flex-direction: column;
+  }
+  .bar .bar-icon {
+    margin: 10px 0 0 0;
+  }
+  .bar .bar-text {
+    transform: rotate(90deg);
+    font-size: 1.1rem;
+  }
+  .bar .bar-icons-container a img {
+    width: 30px;
+    margin: 10px 0;
+  }
+}
+@media (min-width: 1100px) {
+  .bar .bar-icon img {
+    width: 60px;
+  }
+  .bar .bar-text {
+    font-size: 1.2rem;
+    letter-spacing: 6px;
+  }
+  .bar .bar-icons-container a img {
+    width: 30px;
+  }
+}
+@media (min-width: 2000px) {
+  .bar {
+    width: 100px;
+  }
+  .bar .bar-text {
+    font-size: 2.7rem;
+    letter-spacing: 20px;
+  }
+  .bar .bar-icon img {
+    width: 120px;
+  }
+  .bar .bar-icons-container a img {
+    width: 70px;
+  }
+}
 .initialSection-container {
   width: 100vw;
   height: 100vh;
@@ -249,7 +280,9 @@ body {
     text-align: center;
   }
   .arrowDown {
-    width: 100%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
   @keyframes text-front {
     0% {
