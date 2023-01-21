@@ -1,5 +1,5 @@
 @import "./abstracts/variables";
-
+@import "./abstracts/mixins";
 
 .bar {
     width: 100vw;
@@ -9,7 +9,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 300;
 
     .bar-icon {
 
@@ -43,6 +43,8 @@
         width: 50px;
         height: 100vh;
         flex-direction: column;
+        position: fixed;
+        @include backgroundgradient(90deg, rgba(41,50,65,1) 0%, rgba(41,50,65,1) 10%, transparent 100%);
         
         .bar-icon {
             margin: 10px 0 0 0;

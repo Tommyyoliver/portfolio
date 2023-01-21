@@ -10,7 +10,7 @@ function InitialSeciton() {
                 <h1 className="lastname-back">Oliver</h1>
                 <div className="cube"></div>
             </div>
-            <div className="description">
+            <div className="description-container">
                 <h2 className="description-one">Desarrollador</h2>
                 <div className="description-cube"></div>
                 <h3 className="description-two">Front-End</h3>

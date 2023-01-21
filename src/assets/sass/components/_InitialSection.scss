@@ -61,7 +61,7 @@
 }
 
 
-.description {
+.description-container {
     margin-top: 90px;
     font-size: 1.3rem;
     width: 225px;
@@ -104,10 +104,12 @@
 .arrowDown { 
     width: 50px;
     height: 50px;
-    margin-top: 90px;
+    position: absolute;
+    top: 90vh;
     text-align: center;
     animation: arrowDown 2s infinite normal, blur 10s 1 normal;
     animation-delay: -5s;
+    z-index: 100;
     img {
         width: 30px;
         filter: drop-shadow(0px 0px 4px $primary-color);
@@ -191,7 +193,7 @@
     }
 
     
-    .description {
+    .description-container {
         margin-top: 200px;
         font-size: 1.7rem;
         width: 300px;
@@ -257,7 +259,7 @@
     }
 
     
-    .description {
+    .description-container {
         margin-top: 200px;
         font-size: 2.3rem;
         width: 380px;
@@ -315,7 +317,7 @@
     }
 
     
-    .description {
+    .description-container {
         margin-top: 270px;
         font-size: 3rem;
         width: 500px;
@@ -325,10 +327,6 @@
             width: 520px;
             height: 170px;
         }
-    }
-
-    .arrowDown { 
-        margin-top: 300px;
     }
 
     @keyframes text-front {
@@ -375,7 +373,7 @@
     }
 
     
-    .description {
+    .description-container {
         margin-top: 400px;
         font-size: 4rem;
         width: 660px;
@@ -385,10 +383,6 @@
             width: 700px;
             height: 200px;
         }
-    }
-
-    .arrowDown { 
-        margin-top: 300px;
     }
 
     @keyframes text-front {

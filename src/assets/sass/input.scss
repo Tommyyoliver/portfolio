@@ -1,15 +1,22 @@
 @import "./components/abstracts/variables";
+@import "./components/abstracts/mixins";
 
 * {
-    font-family: sans-serif, Arial, Helvetica;
+    font-family: Arial, sans-serif, Helvetica;
     margin: 0;
     padding: 0;
     color: $primary-color;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 body {
-    background: linear-gradient(90deg, rgba(41,50,65,1) 0%, rgba(41,50,65,1) 30%, rgba(80,80,80,1) 100%);
+    @include backgroundgradient();
+    // background: linear-gradient(90deg, rgba(41,50,65,1) 0%, rgba(41,50,65,1) 30%, rgba(80,80,80,1) 100%);
+}
+body::-webkit-scrollbar {
+    display: none
 }
 
 @import "./components/Sidebar";
 @import "./components/InitialSection";
+@import "./components//AboutMe";
