@@ -12,6 +12,7 @@ function InitialSeciton() {
             </div>
             <div className="description">
                 <h2 className="description-one">Desarrollador</h2>
+                <div className="description-cube"></div>
                 <h3 className="description-two">Front-End</h3>
             </div>
             <div className="arrowDown">
