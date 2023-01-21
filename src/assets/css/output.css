@@ -327,13 +327,13 @@ body {
   }
   @keyframes text-back {
     0% {
-      transform: translate(-20px, -40px);
+      transform: translate(-20px, -50px);
     }
     30% {
-      transform: translate(-20px, -40px);
+      transform: translate(-20px, -50px);
     }
     50% {
-      transform: translate(-20px, -44px);
+      transform: translate(-20px, -54px);
     }
     85% {
       transform: translate(-20px, 4px);
