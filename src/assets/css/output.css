@@ -41,6 +41,11 @@ body::-webkit-scrollbar {
   width: 25px;
   filter: invert(1);
 }
+.bar .bar-icons-container a img:hover {
+  transform: scale(1.06);
+  filter: invert(0.6);
+  transition: all 0.5s ease;
+}
 
 @media (min-width: 769px) {
   .bar {
@@ -103,6 +108,7 @@ body::-webkit-scrollbar {
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  padding-top: 15vh;
 }
 
 .name-container {
@@ -112,7 +118,7 @@ body::-webkit-scrollbar {
 .name-container .name-front {
   position: absolute;
   top: 120px;
-  transform: translateX(50px);
+  transform: translate(50px, 110px);
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
   animation: text-front 2s 1 normal;
@@ -121,7 +127,7 @@ body::-webkit-scrollbar {
 .name-container .name-back {
   position: absolute;
   top: 180px;
-  transform: translateX(50px);
+  transform: translate(50px, 110px);
   animation: text-back 2s 1 normal, blur 10s 1 normal;
   opacity: 0;
   z-index: 0;
@@ -130,7 +136,7 @@ body::-webkit-scrollbar {
   z-index: 200;
   position: absolute;
   top: 180px;
-  transform: translateX(50px);
+  transform: translate(50px, 110px);
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
   animation: blur 10s 1 normal;
@@ -140,7 +146,7 @@ body::-webkit-scrollbar {
   z-index: 0;
   position: absolute;
   top: 180px;
-  transform: translateX(50px);
+  transform: translate(50px, 110px);
   animation: blur 10s 1 normal;
   animation-delay: -5s;
 }
@@ -167,21 +173,22 @@ body::-webkit-scrollbar {
   width: 13ch;
   white-space: nowrap;
   border-right: 1px solid transparent;
-  animation: typing 2s steps(16) normal, blick 2s step-end normal;
+  animation: typing 2s steps(13) normal, blick 2s step-end normal;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 0;
   font-weight: 700;
   z-index: 100;
+  transform: translateX(-5px);
 }
 .description-container .description-two {
   color: #ee886f;
   width: 9ch;
-  font-weight: 700;
   white-space: nowrap;
   border-right: 1px solid transparent;
-  animation: typingTwo 3s steps(9) normal, blickTwo 3s step-end normal;
+  animation: typingTwo 2s steps(9) normal, blickTwo 2s step-end normal;
   overflow: hidden;
   margin: 0 auto;
+  font-weight: 700;
   z-index: 100;
 }
 .description-container .description-cube {
@@ -210,30 +217,30 @@ body::-webkit-scrollbar {
 
 @keyframes text-front {
   0% {
-    transform: translate(50px, 30px);
+    transform: translate(50px, 140px);
   }
   30% {
-    transform: translate(50px, 30px);
+    transform: translate(50px, 140px);
   }
   50% {
-    transform: translate(50px, 34px);
+    transform: translate(50px, 144px);
   }
   85% {
-    transform: translate(50px, -5px);
+    transform: translate(50px, 105px);
   }
 }
 @keyframes text-back {
   0% {
-    transform: translate(50px, -29px);
+    transform: translate(50px, 80px);
   }
   30% {
-    transform: translate(50px, -29px);
+    transform: translate(50px, 80px);
   }
   50% {
-    transform: translate(50px, -34px);
+    transform: translate(50px, 76px);
   }
   85% {
-    transform: translate(50px, 4px);
+    transform: translate(50px, 117px);
   }
 }
 @keyframes blur {
@@ -249,6 +256,10 @@ body::-webkit-scrollbar {
 @keyframes typing {
   0% {
     width: 0;
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(5px);
   }
 }
 @keyframes typingTwo {
@@ -280,6 +291,7 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
+    padding-top: 0;
   }
   .name-container {
     font-size: 2.7rem;

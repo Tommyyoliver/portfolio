@@ -33,6 +33,11 @@
                 width: 25px;
                 filter: invert(1);
             }
+            img:hover {
+                transform: scale(1.06);
+                filter: invert(.6);
+                transition: all .5s ease;
+            }
         }
     }
 }
