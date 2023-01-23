@@ -70,7 +70,7 @@
     flex-direction: column;
 
     .description-one {
-        color: #ee886f;
+        color: $secondary-color;
         width: 13ch;
         white-space: nowrap;
         border-right: 1px solid transparent;
@@ -81,7 +81,7 @@
         z-index: 100;
     }
     .description-two {
-        color: #ee886f;
+        color: $secondary-color;
         width: 9ch;
         font-weight: 700;
         white-space: nowrap;

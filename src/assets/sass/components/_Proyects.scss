@@ -1,0 +1,187 @@
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+.projects-container {
+    width: 100vw;
+    height: min-content;
+    margin-bottom: 20vh;
+
+    .project-title-container {
+        border-top: 6px dashed $border-color;
+        border-right: 6px dashed $border-color;
+        border-bottom: 6px dashed $border-color;
+        @include backgroundgradient();
+        width: min-content;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+        h2 {
+            font-size: 3rem;
+            padding: 5px;
+            margin-left: 20px;
+            margin-right: 10px;
+        }
+    }
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: 80%;
+        margin: 0 auto;
+
+        .proyect {
+            margin: 20px auto;
+            width: 250px;
+            height: 250px;
+            border: 2px dashed $secondary-color;
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+            background-color: $background-color;
+
+            a {
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                text-decoration: none;
+
+                .project-header {
+                    display: flex;
+                    flex-direction: row;
+                    height: 50px;
+                    justify-content: space-between;
+
+                    img {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                h5 {
+                    height: 135px;
+                }
+                h6 {
+                    height: 20px;
+                }
+            }
+        }
+        .proyect:hover {
+            transform: scale(1.02);
+            transition: all .3s ease;
+            filter: grayscale(.7);
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    .projects-container {
+    
+        .project-title-container {
+    
+            h2 {
+                font-size: 4rem;
+                padding: 5px;
+                margin-left: 40px;
+                margin-right: 10px;
+            }
+        }
+        .projects {
+    
+            .proyect {
+                width: 300px;
+                height: 300px;
+    
+                a {
+                    padding: 30px;
+    
+                    h5 {
+                        height: 165px;
+                    }
+                }
+            }
+            
+        }
+    }   
+}
+@media (min-width: 1025px) {
+    .projects-container {
+    
+        .project-title-container {
+    
+            h2 {
+                font-size: 5rem;
+                margin-left: 200px;
+            }
+        }
+        .projects {
+
+            .proyect {
+    
+                a {
+                    font-size: 1.2rem;
+                }
+            }
+            
+        }
+    }   
+}
+@media (min-width: 1541px) {
+    .projects-container {
+    
+        .project-title-container {
+
+            h2 {
+                font-size: 7rem;
+                margin-left: 220px;
+            }
+        }
+        .projects {
+            margin: 100px;
+            
+            .proyect {
+    
+                a {
+                    font-size: 1.4rem;
+                }
+            }
+            
+        }
+    }   
+}
+@media (min-width: 2000px) {
+    .projects-container {
+    
+        .project-title-container {
+            border-top: 10px dashed $border-color;
+            border-right: 10px dashed $border-color;
+            border-bottom: 10px dashed $border-color;
+            h2 {
+                font-size: 9rem;
+                margin-left: 500px;
+                margin-right: 60px;
+            }
+        }
+        .projects {
+            margin: auto;
+            .proyect {
+                width: 500px;
+                height: 500px;
+                a {
+                    font-size: 2rem;
+                    
+                    h5 {
+                        height: 250px;
+                        font-size: 1.7rem;
+                        overflow-y: hidden;
+                        margin-bottom: 5px;
+                    }
+                    h6 {
+                        height: 30px;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+            
+        }
+    }
+}

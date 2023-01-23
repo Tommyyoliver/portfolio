@@ -642,5 +642,142 @@ body::-webkit-scrollbar {
     margin-bottom: 80px;
   }
 }
+.projects-container {
+  width: 100vw;
+  height: min-content;
+  margin-bottom: 20vh;
+}
+.projects-container .project-title-container {
+  border-top: 6px dashed #112035;
+  border-right: 6px dashed #112035;
+  border-bottom: 6px dashed #112035;
+  background: linear-gradient(90deg, rgb(41, 50, 65) 0%, rgb(41, 50, 65) 30%, rgb(80, 80, 80) 100%);
+  width: min-content;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.projects-container .project-title-container h2 {
+  font-size: 3rem;
+  padding: 5px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.projects-container .projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 80%;
+  margin: 0 auto;
+}
+.projects-container .projects .proyect {
+  margin: 20px auto;
+  width: 250px;
+  height: 250px;
+  border: 2px dashed #ee886f;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  background-color: rgb(41, 50, 65);
+}
+.projects-container .projects .proyect a {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-decoration: none;
+}
+.projects-container .projects .proyect a .project-header {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  justify-content: space-between;
+}
+.projects-container .projects .proyect a .project-header img {
+  width: 25px;
+  height: 25px;
+}
+.projects-container .projects .proyect a h5 {
+  height: 135px;
+}
+.projects-container .projects .proyect a h6 {
+  height: 20px;
+}
+.projects-container .projects .proyect:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+  filter: grayscale(0.7);
+}
+
+@media (min-width: 769px) {
+  .projects-container .project-title-container h2 {
+    font-size: 4rem;
+    padding: 5px;
+    margin-left: 40px;
+    margin-right: 10px;
+  }
+  .projects-container .projects .proyect {
+    width: 300px;
+    height: 300px;
+  }
+  .projects-container .projects .proyect a {
+    padding: 30px;
+  }
+  .projects-container .projects .proyect a h5 {
+    height: 165px;
+  }
+}
+@media (min-width: 1025px) {
+  .projects-container .project-title-container h2 {
+    font-size: 5rem;
+    margin-left: 200px;
+  }
+  .projects-container .projects .proyect a {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1541px) {
+  .projects-container .project-title-container h2 {
+    font-size: 7rem;
+    margin-left: 220px;
+  }
+  .projects-container .projects {
+    margin: 100px;
+  }
+  .projects-container .projects .proyect a {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 2000px) {
+  .projects-container .project-title-container {
+    border-top: 10px dashed #112035;
+    border-right: 10px dashed #112035;
+    border-bottom: 10px dashed #112035;
+  }
+  .projects-container .project-title-container h2 {
+    font-size: 9rem;
+    margin-left: 500px;
+    margin-right: 60px;
+  }
+  .projects-container .projects {
+    margin: auto;
+  }
+  .projects-container .projects .proyect {
+    width: 500px;
+    height: 500px;
+  }
+  .projects-container .projects .proyect a {
+    font-size: 2rem;
+  }
+  .projects-container .projects .proyect a h5 {
+    height: 250px;
+    font-size: 1.7rem;
+    overflow-y: hidden;
+    margin-bottom: 5px;
+  }
+  .projects-container .projects .proyect a h6 {
+    height: 30px;
+    font-size: 1.3rem;
+  }
+}
 
 /*# sourceMappingURL=output.css.map */
