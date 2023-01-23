@@ -293,7 +293,9 @@
 }
 
 @media (min-width: 1441px) {
-
+    .initialSection-container {
+        padding-top: -100vh;
+    }
     .name-container {
         font-size: 6rem;
         margin-top: 100px;
@@ -334,10 +336,10 @@
     }
 
     @keyframes text-front {
-        0% {transform: translate(-100px, 130px);}
-        30% {transform: translate(-100px, 130px);}
-        50% {transform: translate(-100px, 138px);}
-        85% {transform: translate(-100px, -5px);}
+        0% {transform: translate(-102px, 130px);}
+        30% {transform: translate(-102px, 130px);}
+        50% {transform: translate(-102px, 138px);}
+        85% {transform: translate(-102px, -5px);}
     }
     @keyframes text-back {
         0% {transform: translate(-102px, -130px);}

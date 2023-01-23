@@ -4,6 +4,7 @@
 .about-container {
     width: 100vw;
     height: 100vh;
+    overflow-y: hidden;
 
     .about-title-container {
         border-top: 6px dashed $border-color;
@@ -21,17 +22,26 @@
             margin-right: 10px;
         }
     }
+    .about-caption-container {
+        h3 {
+            font-size: 1.3rem;
+            margin-left: 40px;
+            margin-top: 10px;
+            color: $secondary-color;
+        }
+    }
     .about-text-container {
         text-align: center;
         margin-top: 30px;
         width: 80%;
         margin-left: auto;
         margin-right: auto;
+        text-align: start;
 
         p {
             font-weight: 600;
             font-size: 1rem;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
 
             span {
                 color: $secondary-color;
@@ -55,6 +65,13 @@
                 font-size: 4rem;
             }
         }
+        .about-caption-container {
+            h3 {
+                font-size: 2rem;
+                margin-left: 100px;
+                margin-top: 20px;
+            }
+        }
         .about-text-container {
             p {
                 font-size: 1.3rem;
@@ -68,6 +85,12 @@
             h2 {
                 font-size: 5rem;
                 margin-left: 200px;
+            }
+        }
+        .about-caption-container {
+            h3 {
+                font-size: 2.3rem;
+                margin-left: 130px;
             }
         }
         .about-text-container {

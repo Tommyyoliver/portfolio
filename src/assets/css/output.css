@@ -44,7 +44,7 @@ body::-webkit-scrollbar {
 .bar .bar-icons-container a img:hover {
   transform: scale(1.06);
   filter: invert(0.6);
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 @media (min-width: 769px) {
@@ -77,7 +77,7 @@ body::-webkit-scrollbar {
   }
   .bar .bar-text {
     font-size: 1.4rem;
-    letter-spacing: 6px;
+    letter-spacing: 10px;
   }
   .bar .bar-icons-container a {
     margin-left: 20px;
@@ -434,6 +434,9 @@ body::-webkit-scrollbar {
   }
 }
 @media (min-width: 1441px) {
+  .initialSection-container {
+    padding-top: -100vh;
+  }
   .name-container {
     font-size: 6rem;
     margin-top: 100px;
@@ -470,16 +473,16 @@ body::-webkit-scrollbar {
   }
   @keyframes text-front {
     0% {
-      transform: translate(-100px, 130px);
+      transform: translate(-102px, 130px);
     }
     30% {
-      transform: translate(-100px, 130px);
+      transform: translate(-102px, 130px);
     }
     50% {
-      transform: translate(-100px, 138px);
+      transform: translate(-102px, 138px);
     }
     85% {
-      transform: translate(-100px, -5px);
+      transform: translate(-102px, -5px);
     }
   }
   @keyframes text-back {
@@ -566,6 +569,7 @@ body::-webkit-scrollbar {
 .about-container {
   width: 100vw;
   height: 100vh;
+  overflow-y: hidden;
 }
 .about-container .about-title-container {
   border-top: 6px dashed #112035;
@@ -582,17 +586,24 @@ body::-webkit-scrollbar {
   margin-left: 40px;
   margin-right: 10px;
 }
+.about-container .about-caption-container h3 {
+  font-size: 1.3rem;
+  margin-left: 40px;
+  margin-top: 10px;
+  color: #ee886f;
+}
 .about-container .about-text-container {
   text-align: center;
   margin-top: 30px;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  text-align: start;
 }
 .about-container .about-text-container p {
   font-weight: 600;
   font-size: 1rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .about-container .about-text-container p span {
   color: #ee886f;
@@ -608,6 +619,11 @@ body::-webkit-scrollbar {
   .about-container .about-title-container h2 {
     font-size: 4rem;
   }
+  .about-container .about-caption-container h3 {
+    font-size: 2rem;
+    margin-left: 100px;
+    margin-top: 20px;
+  }
   .about-container .about-text-container p {
     font-size: 1.3rem;
   }
@@ -616,6 +632,10 @@ body::-webkit-scrollbar {
   .about-container .about-title-container h2 {
     font-size: 5rem;
     margin-left: 200px;
+  }
+  .about-container .about-caption-container h3 {
+    font-size: 2.3rem;
+    margin-left: 130px;
   }
   .about-container .about-text-container p {
     font-size: 1.3rem;
@@ -667,13 +687,16 @@ body::-webkit-scrollbar {
   width: min-content;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 30px;
 }
 .projects-container .project-title-container h2 {
   font-size: 3rem;
   padding: 5px;
   margin-left: 20px;
   margin-right: 10px;
+}
+.projects-container .project-caption-container h3 {
+  color: #ee886f;
+  margin: 10px 0 50px 40px;
 }
 .projects-container .projects {
   display: flex;
@@ -713,6 +736,7 @@ body::-webkit-scrollbar {
 }
 .projects-container .projects .proyect a h6 {
   height: 20px;
+  color: #ee886f;
 }
 .projects-container .projects .proyect:hover {
   transform: scale(1.02);
@@ -726,6 +750,11 @@ body::-webkit-scrollbar {
     padding: 5px;
     margin-left: 40px;
     margin-right: 10px;
+  }
+  .projects-container .project-caption-container h3 {
+    font-size: 2rem;
+    margin-left: 100px;
+    margin-top: 20px;
   }
   .projects-container .projects .proyect {
     width: 300px;
@@ -742,6 +771,10 @@ body::-webkit-scrollbar {
   .projects-container .project-title-container h2 {
     font-size: 5rem;
     margin-left: 200px;
+  }
+  .projects-container .project-caption-container h3 {
+    font-size: 2.3rem;
+    margin-left: 130px;
   }
   .projects-container .projects .proyect a {
     font-size: 1.2rem;

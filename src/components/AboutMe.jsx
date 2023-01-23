@@ -4,6 +4,9 @@ function AboutMe () {
             <div className="about-title-container">
                 <h2>SOBRE MÍ</h2>
             </div>
+            <div className="about-caption-container">
+                <h3>:) QUIÉN SOY</h3>
+            </div>
             <div className="about-text-container">
                 <p>¡Hola! Mi nombre es <span>Tommy</span>, construyo paginas web. Soy un Desarrollador Front-End autodidacta iniciado en 2022 apasionado por este sector.</p>
                 <p>Disfruto llevar a cabo la maquetación e interactividad de interfaces web, así como la optimización.</p>

@@ -36,7 +36,7 @@
             img:hover {
                 transform: scale(1.06);
                 filter: invert(.6);
-                transition: all .5s ease;
+                transition: all .3s ease;
             }
         }
     }
@@ -78,7 +78,7 @@
         }
         .bar-text {
             font-size: 1.4rem;
-            letter-spacing: 6px;
+            letter-spacing: 10px;
         }
         .bar-icons-container {
             a {
