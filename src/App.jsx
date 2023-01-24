@@ -3,6 +3,7 @@ import { Sidebar } from "./components/Sidebar";
 import { InitialSeciton } from './components/InitialSection';
 import { AboutMe } from "./components/AboutMe";
 import { Proyects } from "./components/Proyects";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <InitialSeciton />
       <AboutMe />
       <Proyects />
+      <Footer />
     </div>
   )
 }

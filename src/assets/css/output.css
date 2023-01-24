@@ -195,6 +195,7 @@ body::-webkit-scrollbar {
   width: 230px;
   height: 80px;
   border: 6px dashed #112035;
+  box-shadow: 0px 0px 20px 0px #112035;
   position: absolute;
   transform: translate(-10px, -10px);
   z-index: 0;
@@ -570,13 +571,16 @@ body::-webkit-scrollbar {
   width: 100vw;
   height: 100vh;
   overflow-y: hidden;
+  padding-top: 20px;
 }
 .about-container .about-title-container {
   border-top: 6px dashed #112035;
   border-right: 6px dashed #112035;
   border-bottom: 6px dashed #112035;
   background: linear-gradient(90deg, rgb(41, 50, 65) 0%, rgb(41, 50, 65) 30%, rgb(80, 80, 80) 100%);
+  box-shadow: 0px 0px 20px 0px #112035;
   width: min-content;
+  height: min-content;
   text-align: center;
   margin-top: 20px;
 }
@@ -684,7 +688,9 @@ body::-webkit-scrollbar {
   border-right: 6px dashed #112035;
   border-bottom: 6px dashed #112035;
   background: linear-gradient(90deg, rgb(41, 50, 65) 0%, rgb(41, 50, 65) 30%, rgb(80, 80, 80) 100%);
+  box-shadow: 0px 0px 20px 0px #112035;
   width: min-content;
+  height: min-content;
   text-align: center;
   margin-top: 20px;
 }
@@ -822,6 +828,51 @@ body::-webkit-scrollbar {
   .projects-container .projects .proyect a h6 {
     height: 30px;
     font-size: 1.3rem;
+  }
+}
+footer {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
+  border-top: 1px dashed #ee886f;
+}
+footer .color-palette {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .color-palette div {
+  width: 50px;
+  height: 30px;
+}
+footer .color-palette .color-primary {
+  background-color: #fdfdfd;
+}
+footer .color-palette .color-secondary {
+  background-color: #ee886f;
+}
+footer .color-palette .color-background {
+  background-color: rgb(41, 50, 65);
+}
+footer .color-palette .color-border {
+  background-color: #112035;
+}
+
+@media (min-width: 2000px) {
+  footer {
+    padding: 50px 0;
+  }
+  footer h5 {
+    font-size: 1.6rem;
+  }
+  footer .color-palette {
+    margin-top: 50px;
+  }
+  footer .color-palette div {
+    width: 100px;
+    height: 60px;
   }
 }
 

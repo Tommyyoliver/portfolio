@@ -97,6 +97,7 @@
         width: 230px;
         height: 80px;
         border: 6px dashed #112035;
+        box-shadow: 0px 0px 20px 0px $border-color;
         position: absolute;
         transform: translate(-10px, -10px);
         z-index: 0;

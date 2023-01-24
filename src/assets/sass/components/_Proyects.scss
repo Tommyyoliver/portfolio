@@ -11,7 +11,9 @@
         border-right: 6px dashed $border-color;
         border-bottom: 6px dashed $border-color;
         @include backgroundgradient();
+        box-shadow: 0px 0px 20px 0px $border-color;
         width: min-content;
+        height: min-content;
         text-align: center;
         margin-top: 20px;
 
