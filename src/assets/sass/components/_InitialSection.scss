@@ -16,7 +16,7 @@
 
     .name-front {
         position: absolute;
-        top: 120px;
+        top: 130px;
         transform: translate(50px, 110px);
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 2px;
@@ -25,7 +25,7 @@
     }
     .name-back {
         position: absolute;
-        top: 180px;
+        top: 190px;
         transform: translate(50px, 110px);
         animation: text-back 2s 1 normal, blur 10s 1 normal;
         opacity: 0;
@@ -34,7 +34,7 @@
     .lastname-front {
         z-index: 200;
         position: absolute;
-        top: 180px;
+        top: 190px;
         transform: translate(50px, 110px);
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 2px;
@@ -44,7 +44,7 @@
     .lastname-back {
         z-index: 0;
         position: absolute;
-        top: 180px;
+        top: 190px;
         transform: translate(50px, 110px);
         animation: blur 10s 1 normal;
         animation-delay: -5s;
