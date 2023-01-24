@@ -12,6 +12,11 @@ function AboutMe () {
                 <p>Disfruto llevar a cabo la maquetación e interactividad de interfaces web, así como la optimización.</p>
                 <p>Mi <span>objetivo</span> ha sido el mismo desde un principio: obtener la atencion del usuario, más allá de un buen diseño, con una interfaz útil e interactiva.</p>
             </div>
+            <div className="btn-container">
+                <div className="btn">
+                    <a href="mailto:tommyolivr@gmail.com?Subject=QUIERO%20CONTACTARME%20CONTIGO!">CONTÁCTAME</a>
+                </div>
+            </div>
         </div>
     )
 }

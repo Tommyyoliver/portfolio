@@ -7,10 +7,10 @@
     margin-bottom: 20vh;
 
     .project-title-container {
-        border-top: 6px dashed $border-color;
-        border-right: 6px dashed $border-color;
-        border-bottom: 6px dashed $border-color;
-        @include backgroundgradient();
+        border-top: 4px dotted $border-color;
+        border-right: 4px dotted $border-color;
+        border-bottom: 4px dotted $border-color;
+        // @include backgroundgradient();
         box-shadow: 0px 0px 20px 0px $border-color;
         width: min-content;
         height: min-content;

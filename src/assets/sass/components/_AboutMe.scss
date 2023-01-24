@@ -3,15 +3,16 @@
 
 .about-container {
     width: 100vw;
-    height: 100vh;
+    height: min-content;
     overflow-y: hidden;
     padding-top: 20px;
+    margin-bottom: 100px;
 
     .about-title-container {
-        border-top: 6px dashed $border-color;
-        border-right: 6px dashed $border-color;
-        border-bottom: 6px dashed $border-color;
-        @include backgroundgradient();
+        border-top: 4px dotted $border-color;
+        border-right: 4px dotted $border-color;
+        border-bottom: 4px dotted $border-color;
+        // @include backgroundgradient();
         box-shadow: 0px 0px 20px 0px $border-color;
         width: min-content;
         height: min-content;
@@ -49,6 +50,31 @@
             span {
                 color: $secondary-color;
                 font-weight: 700;
+            }
+        }
+    }
+    .btn-container {
+        width: 80%;
+        margin: 0 auto;
+        div {
+            width: min-content;
+            height: min-content;
+            padding: 20px;
+            border: 2px solid $border-color;
+            border-radius: 3px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+
+            a {
+                text-decoration: none;
+            }
+        }
+        div:hover {
+            background-color: $primary-color;
+            transition: .2s;
+            a {
+                color: $secondary-color;
             }
         }
     }
@@ -101,6 +127,11 @@
                 font-size: 1.3rem;
             }
         }
+        .btn-container {
+            div {
+                font-size: 1.8;
+            }
+        }
     }
 }
 @media (min-width: 1441px) {
@@ -116,6 +147,14 @@
             p {
                 font-size: 1.8rem;
                 margin-bottom: 40px;
+            }
+        }
+        .btn-container {
+            width: 60%;
+
+            div {
+                font-size: 1.7rem;
+                border: 4px dashed $border-color;
             }
         }
     }
@@ -138,6 +177,15 @@
             p {
                 font-size: 3rem;
                 margin-bottom: 80px;
+            }
+        }
+        .btn-container {
+            width: 50%;
+
+            div {
+                font-size: 2rem;
+                padding: 50px;
+                border: 5px dashed $border-color;
             }
         }
     }

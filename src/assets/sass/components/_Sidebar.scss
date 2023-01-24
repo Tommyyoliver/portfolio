@@ -25,13 +25,14 @@
     }
     
     .bar-icons-container {
-
+        
         a {
-            margin: 0 5px 0 5px;
+            margin: 0 15px 0 5px;
         
             img {
-                width: 25px;
+                width: 35px;
                 filter: invert(1);
+                cursor: pointer;
             }
             img:hover {
                 transform: scale(1.06);

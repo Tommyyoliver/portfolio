@@ -35,11 +35,12 @@ body::-webkit-scrollbar {
   font-weight: 700;
 }
 .bar .bar-icons-container a {
-  margin: 0 5px 0 5px;
+  margin: 0 15px 0 5px;
 }
 .bar .bar-icons-container a img {
-  width: 25px;
+  width: 35px;
   filter: invert(1);
+  cursor: pointer;
 }
 .bar .bar-icons-container a img:hover {
   transform: scale(1.06);
@@ -194,7 +195,7 @@ body::-webkit-scrollbar {
 .description-container .description-cube {
   width: 230px;
   height: 80px;
-  border: 6px dashed #112035;
+  border: 4px dotted #112035;
   box-shadow: 0px 0px 20px 0px #112035;
   position: absolute;
   transform: translate(-10px, -10px);
@@ -569,15 +570,15 @@ body::-webkit-scrollbar {
 }
 .about-container {
   width: 100vw;
-  height: 100vh;
+  height: min-content;
   overflow-y: hidden;
   padding-top: 20px;
+  margin-bottom: 100px;
 }
 .about-container .about-title-container {
-  border-top: 6px dashed #112035;
-  border-right: 6px dashed #112035;
-  border-bottom: 6px dashed #112035;
-  background: linear-gradient(90deg, rgb(41, 50, 65) 0%, rgb(41, 50, 65) 30%, rgb(80, 80, 80) 100%);
+  border-top: 4px dotted #112035;
+  border-right: 4px dotted #112035;
+  border-bottom: 4px dotted #112035;
   box-shadow: 0px 0px 20px 0px #112035;
   width: min-content;
   height: min-content;
@@ -613,6 +614,30 @@ body::-webkit-scrollbar {
   color: #ee886f;
   font-weight: 700;
 }
+.about-container .btn-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.about-container .btn-container div {
+  width: min-content;
+  height: min-content;
+  padding: 20px;
+  border: 2px solid #112035;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.about-container .btn-container div a {
+  text-decoration: none;
+}
+.about-container .btn-container div:hover {
+  background-color: #fdfdfd;
+  transition: 0.2s;
+}
+.about-container .btn-container div:hover a {
+  color: #ee886f;
+}
 
 @media (min-width: 376px) {
   .about-container .about-text-container {
@@ -644,6 +669,9 @@ body::-webkit-scrollbar {
   .about-container .about-text-container p {
     font-size: 1.3rem;
   }
+  .about-container .btn-container div {
+    font-size: 1.8;
+  }
 }
 @media (min-width: 1441px) {
   .about-container .about-title-container h2 {
@@ -656,6 +684,13 @@ body::-webkit-scrollbar {
   .about-container .about-text-container p {
     font-size: 1.8rem;
     margin-bottom: 40px;
+  }
+  .about-container .btn-container {
+    width: 60%;
+  }
+  .about-container .btn-container div {
+    font-size: 1.7rem;
+    border: 4px dashed #112035;
   }
 }
 @media (min-width: 2000px) {
@@ -677,6 +712,14 @@ body::-webkit-scrollbar {
     font-size: 3rem;
     margin-bottom: 80px;
   }
+  .about-container .btn-container {
+    width: 50%;
+  }
+  .about-container .btn-container div {
+    font-size: 2rem;
+    padding: 50px;
+    border: 5px dashed #112035;
+  }
 }
 .projects-container {
   width: 100vw;
@@ -684,10 +727,9 @@ body::-webkit-scrollbar {
   margin-bottom: 20vh;
 }
 .projects-container .project-title-container {
-  border-top: 6px dashed #112035;
-  border-right: 6px dashed #112035;
-  border-bottom: 6px dashed #112035;
-  background: linear-gradient(90deg, rgb(41, 50, 65) 0%, rgb(41, 50, 65) 30%, rgb(80, 80, 80) 100%);
+  border-top: 4px dotted #112035;
+  border-right: 4px dotted #112035;
+  border-bottom: 4px dotted #112035;
   box-shadow: 0px 0px 20px 0px #112035;
   width: min-content;
   height: min-content;
