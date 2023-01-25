@@ -24,8 +24,12 @@ function AboutMe () {
             </div>
             <div className="btn-container">
                 <div className="btn">
-                    <a href="mailto:tommyolivr@gmail.com?Subject=QUIERO%20CONTACTARME%20CONTIGO!">CONTÁCTAME</a>
-                    <img src={emailLogo} alt="email" />
+                    <a href="mailto:tommyolivr@gmail.com?Subject=QUIERO%20CONTACTARME%20CONTIGO!">
+                        <div>
+                            <p>CONTACTAME</p>
+                            <img src={emailLogo} alt="email" />
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

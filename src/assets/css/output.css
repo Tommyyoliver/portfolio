@@ -679,7 +679,7 @@ body::-webkit-scrollbar {
   width: 80%;
   margin: 0 auto;
 }
-.about-container .btn-container div {
+.about-container .btn-container .btn {
   width: min-content;
   height: min-content;
   padding: 20px;
@@ -688,14 +688,16 @@ body::-webkit-scrollbar {
   font-size: 1.2rem;
   font-weight: bold;
   cursor: pointer;
+}
+.about-container .btn-container .btn a {
+  text-decoration: none;
+}
+.about-container .btn-container .btn a div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.about-container .btn-container div a {
-  text-decoration: none;
-}
-.about-container .btn-container div img {
+.about-container .btn-container .btn a img {
   width: 40px;
   margin-left: 20px;
   filter: invert(1);
@@ -704,10 +706,10 @@ body::-webkit-scrollbar {
   background-color: #fdfdfd;
   transition: 0.2s;
 }
-.about-container .btn-container div:hover a {
+.about-container .btn-container div:hover a p {
   color: #ee886f;
 }
-.about-container .btn-container div:hover img {
+.about-container .btn-container div:hover a img {
   filter: invert(0);
 }
 
@@ -792,7 +794,7 @@ body::-webkit-scrollbar {
     padding: 50px;
     border: 5px solid #112035;
   }
-  .about-container .btn-container div img {
+  .about-container .btn-container div a img {
     width: 90px;
     margin-left: 50px;
   }
