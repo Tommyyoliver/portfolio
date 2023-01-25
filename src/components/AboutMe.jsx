@@ -1,3 +1,5 @@
+import emailLogo from "../icons/email.png";
+
 function AboutMe () {
     return (
         <div className="about-container">
@@ -15,6 +17,7 @@ function AboutMe () {
             <div className="btn-container">
                 <div className="btn">
                     <a href="mailto:tommyolivr@gmail.com?Subject=QUIERO%20CONTACTARME%20CONTIGO!">CONTÁCTAME</a>
+                    <img src={emailLogo} alt="email" />
                 </div>
             </div>
         </div>

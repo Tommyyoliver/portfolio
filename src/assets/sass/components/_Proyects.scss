@@ -5,6 +5,7 @@
     width: 100vw;
     height: min-content;
     margin-bottom: 20vh;
+    overflow-y: hidden;
 
     .project-title-container {
         border-top: 4px dotted $border-color;
