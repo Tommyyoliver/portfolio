@@ -29,10 +29,11 @@ body::-webkit-scrollbar {
   width: 40px;
   margin: 0 30px 0 10px;
 }
-.bar .bar-text {
+.bar .bar-title-container {
   letter-spacing: 4px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 700;
+  white-space: nowrap;
 }
 .bar .bar-icons-container a {
   margin: 0 15px 0 5px;
@@ -48,6 +49,14 @@ body::-webkit-scrollbar {
   transition: all 0.3s ease;
 }
 
+.animation-out {
+  animation: animate-page-out 0.5s normal;
+}
+
+.animation-in {
+  animation: animate-page-in 0.5s normal;
+}
+
 @media (min-width: 769px) {
   .bar {
     width: 50px;
@@ -59,13 +68,30 @@ body::-webkit-scrollbar {
   .bar .bar-icon {
     margin: 10px 0 0 0;
   }
-  .bar .bar-text {
+  .bar .bar-title-container {
     transform: rotate(90deg);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    font-weight: 800;
   }
   .bar .bar-icons-container a img {
     width: 30px;
     margin: 10px 0;
+  }
+  @keyframes animate-page-out {
+    0% {
+      letter-spacing: 4px;
+    }
+    100% {
+      letter-spacing: -10px;
+    }
+  }
+  @keyframes animate-page-in {
+    0% {
+      letter-spacing: -10px;
+    }
+    100% {
+      letter-spacing: 4px;
+    }
   }
 }
 @media (min-width: 1100px) {
@@ -76,9 +102,10 @@ body::-webkit-scrollbar {
     width: 60px;
     margin-left: 30px;
   }
-  .bar .bar-text {
-    font-size: 1.4rem;
-    letter-spacing: 10px;
+  .bar .bar-title-container {
+    font-size: 1.5rem;
+    letter-spacing: 8px;
+    font-weight: 900;
   }
   .bar .bar-icons-container a {
     margin-left: 20px;
@@ -86,20 +113,53 @@ body::-webkit-scrollbar {
   .bar .bar-icons-container a img {
     width: 30px;
   }
+  @keyframes animate-page-out {
+    0% {
+      letter-spacing: 8px;
+    }
+    100% {
+      letter-spacing: -10px;
+    }
+  }
+  @keyframes animate-page-in {
+    0% {
+      letter-spacing: -10px;
+    }
+    100% {
+      letter-spacing: 8px;
+    }
+  }
 }
 @media (min-width: 2000px) {
   .bar {
     width: 100px;
   }
-  .bar .bar-text {
+  .bar .bar-title-container {
     font-size: 2.7rem;
     letter-spacing: 20px;
+    font-weight: bolder;
   }
   .bar .bar-icon img {
     width: 120px;
   }
   .bar .bar-icons-container a img {
     width: 70px;
+  }
+  @keyframes animate-page-out {
+    0% {
+      letter-spacing: 20px;
+    }
+    100% {
+      letter-spacing: -10px;
+    }
+  }
+  @keyframes animate-page-in {
+    0% {
+      letter-spacing: -10px;
+    }
+    100% {
+      letter-spacing: 20px;
+    }
   }
 }
 .initialSection-container {

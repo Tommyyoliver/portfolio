@@ -1,6 +1,14 @@
 import emailLogo from "../icons/email.png";
 
 function AboutMe () {
+
+    window.addEventListener("scroll", () => {
+        const $title = document.querySelector(".about-container");
+        const altura = window.innerHeight/2.6;
+        let distancia = $title.getBoundingClientRect().top;
+    })
+
+
     return (
         <div className="about-container">
             <div className="about-title-container">
