@@ -50,11 +50,11 @@ body::-webkit-scrollbar {
 }
 
 .animation-out {
-  animation: animate-page-out 0.5s normal;
+  animation: animate-page-out 0.3s ease-out;
 }
 
 .animation-in {
-  animation: animate-page-in 0.5s normal;
+  animation: animate-page-in 0.3s ease-in;
 }
 
 @media (min-width: 769px) {
@@ -702,14 +702,14 @@ body::-webkit-scrollbar {
   margin-left: 20px;
   filter: invert(1);
 }
-.about-container .btn-container div:hover {
+.about-container .btn-container .btn:hover {
   background-color: #fdfdfd;
   transition: 0.2s;
 }
-.about-container .btn-container div:hover a p {
+.about-container .btn-container .btn:hover a p {
   color: #ee886f;
 }
-.about-container .btn-container div:hover a img {
+.about-container .btn-container .btn:hover a img {
   filter: invert(0);
 }
 

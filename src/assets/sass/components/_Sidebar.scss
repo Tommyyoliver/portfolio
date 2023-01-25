@@ -45,10 +45,10 @@
 }
 
 .animation-out {
-    animation: animate-page-out .5s normal;
+    animation: animate-page-out .3s ease-out;
 }
 .animation-in {
-    animation: animate-page-in .5s normal;
+    animation: animate-page-in .3s ease-in;
 }
 
 @media (min-width: 769px){
