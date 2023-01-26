@@ -162,6 +162,22 @@
     50% {transform: translateY(5px);}
 }
 
+@media (max-height: 700px) {
+    .initialSection-container {
+        .name-front {
+            top: 100px;
+        }
+        .name-back {
+            top: 160px;
+        }
+        .lastname-front {
+            top: 160px;
+        }
+        .lastname-back {
+            top: 160px;
+        }
+    }
+}
 
 @media (min-width: 769px) {
     .initialSection-container {

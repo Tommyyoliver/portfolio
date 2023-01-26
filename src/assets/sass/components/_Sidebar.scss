@@ -51,6 +51,14 @@
     animation: animate-page-in .3s ease-in;
 }
 
+@media (max-height: 700px) {
+    .bar {
+        .bar-icons-container {
+            display: flex;
+        }
+    }
+}
+
 @media (min-width: 769px){
     .bar {
         width: 50px;
@@ -68,6 +76,7 @@
             font-weight: 800;
         }
         .bar-icons-container {
+            flex-direction: column;
             a {
                 img {
                     width: 30px;
