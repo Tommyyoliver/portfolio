@@ -1,3 +1,5 @@
+import logo from "../icons/logo-crypto.png";
+
 function Proyects() {
     return (
         <div className="projects-container">
@@ -8,6 +10,16 @@ function Proyects() {
                 <h3>MIS TRABAJOS</h3>
             </div>
             <div className="projects">
+                <div className="proyect">
+                    <a href="https://tommyyoliver.github.io/crypto-ranking/" target="_blank">
+                        <div className="project-header">
+                            <h3>Crypto Ranking</h3>
+                            <img src={logo} alt="logo-crypto" />
+                        </div>
+                        <h5>Tabla de clasificación de criptomonedas utilizando API coingecko</h5>
+                        <h6>React - Sass</h6>
+                    </a>
+                </div>
                 <div className="proyect">
                     <a href="https://tommyyoliver.github.io/rick-and-morty-api/" target="_blank">
                         <div className="project-header">
