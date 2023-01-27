@@ -862,7 +862,7 @@ body::-webkit-scrollbar {
   border-radius: 5px;
   cursor: pointer;
   position: relative;
-  background-color: rgb(41, 50, 65);
+  background-color: #213045;
 }
 .projects-container .projects .proyect a {
   display: flex;
@@ -997,7 +997,7 @@ footer .color-palette .color-secondary {
   background-color: #ee886f;
 }
 footer .color-palette .color-background {
-  background-color: rgb(41, 50, 65);
+  background-color: #213045;
 }
 footer .color-palette .color-border {
   background-color: #112035;
