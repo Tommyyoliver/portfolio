@@ -12,6 +12,16 @@ function Proyects() {
             </div>
             <div className="projects">
                 <div className="proyect">
+                    <a href="https://tommyyoliver.github.io/shopping-page/" target="_blank">
+                        <div className="project-header">
+                            <h3>Página de compras</h3>
+                            <img src={logoShop} alt="logo-shop" />
+                        </div>
+                        <h5>Modelo de página de compras</h5>
+                        <h6>React - Sass</h6>
+                    </a>
+                </div>
+                <div className="proyect">
                     <a href="https://tommyyoliver.github.io/crypto-ranking/" target="_blank">
                         <div className="project-header">
                             <h3>Crypto Ranking</h3>
