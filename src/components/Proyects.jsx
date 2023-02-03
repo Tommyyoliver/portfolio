@@ -1,4 +1,5 @@
-import logo from "../icons/logo-crypto.png";
+import logoCrypto from "../icons/logo-crypto.png";
+import logoShop from "../icons/logo-shop-light.png";
 
 function Proyects() {
     return (
@@ -14,7 +15,7 @@ function Proyects() {
                     <a href="https://tommyyoliver.github.io/crypto-ranking/" target="_blank">
                         <div className="project-header">
                             <h3>Crypto Ranking</h3>
-                            <img src={logo} alt="logo-crypto" />
+                            <img src={logoCrypto} alt="logo-crypto" />
                         </div>
                         <h5>Tabla de clasificación de criptomonedas utilizando API coingecko</h5>
                         <h6>React - Sass</h6>
