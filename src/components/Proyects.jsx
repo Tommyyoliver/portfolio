@@ -22,16 +22,6 @@ function Proyects() {
                     </a>
                 </div>
                 <div className="proyect">
-                    <a href="https://tommyyoliver.github.io/crypto-ranking/" target="_blank">
-                        <div className="project-header">
-                            <h3>Crypto Ranking</h3>
-                            <img src={logoCrypto} alt="logo-crypto" />
-                        </div>
-                        <h5>Tabla de clasificación de criptomonedas utilizando API coingecko</h5>
-                        <h6>React - Sass</h6>
-                    </a>
-                </div>
-                <div className="proyect">
                     <a href="https://tommyyoliver.github.io/rick-and-morty-api/" target="_blank">
                         <div className="project-header">
                             <h3>Rick and Morty API</h3>
