@@ -863,6 +863,7 @@ body::-webkit-scrollbar {
   cursor: pointer;
   position: relative;
   background-color: #213045;
+  overflow-y: hidden;
 }
 .projects-container .projects .proyect a {
   display: flex;
@@ -875,9 +876,13 @@ body::-webkit-scrollbar {
   flex-direction: row;
   height: 50px;
   justify-content: space-between;
+  margin-bottom: 10px;
+}
+.projects-container .projects .proyect a .project-header h3 {
+  overflow-y: hidden;
 }
 .projects-container .projects .proyect a .project-header img {
-  width: 25px;
+  width: 28px;
   height: 25px;
 }
 .projects-container .projects .proyect a h5 {

@@ -47,6 +47,7 @@
             cursor: pointer;
             position: relative;
             background-color: $background-color;
+            overflow-y: hidden;
 
             a {
                 display: flex;
@@ -59,9 +60,12 @@
                     flex-direction: row;
                     height: 50px;
                     justify-content: space-between;
-
+                    margin-bottom: 10px;
+                    h3 {
+                        overflow-y: hidden;
+                    }
                     img {
-                        width: 25px;
+                        width: 28px;
                         height: 25px;
                     }
                 }

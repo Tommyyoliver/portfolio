@@ -1,5 +1,6 @@
 import logoCrypto from "../icons/logo-crypto.png";
 import logoShop from "../icons/logo-shop-light.png";
+import logoPassword from "../icons/logo-password.png"
 
 function Proyects() {
     return (
@@ -11,6 +12,16 @@ function Proyects() {
                 <h3>MIS TRABAJOS</h3>
             </div>
             <div className="projects">
+                <div className="proyect">
+                    <a href="https://tommyyoliver.github.io/generate-password/" target="_blank">
+                        <div className="project-header">
+                            <h3>Generador de contraseñas</h3>
+                            <img src={logoPassword} alt="logo-password" />
+                        </div>
+                        <h5>Generador de contraseñas aleatorias configurable</h5>
+                        <h6>React</h6>
+                    </a>
+                </div>
                 <div className="proyect">
                     <a href="https://tommyyoliver.github.io/shopping-page/" target="_blank">
                         <div className="project-header">
